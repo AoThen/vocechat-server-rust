@@ -48,7 +48,7 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           file: build/docker/Dockerfile
-          context: .
+          context: build/docker
           platforms: linux/amd64  #,linux/arm64 # 指定架构：x86_64 和 ARM64
           push: true
           tags: |
